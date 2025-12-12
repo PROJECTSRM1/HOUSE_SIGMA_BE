@@ -1,0 +1,36 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+
+# Auth / security / forms
+passlib
+bcrypt
+PyJWT
+python-multipart
+email-validator
+
+# Templates, HTTP, files
+jinja2
+requests
+aiofiles
+
+# Database
+SQLAlchemy
+psycopg[binary]
+
+# Email / notifications (keep if you still use it)
+resend
+
+# LangChain + Groq (for new chatbot logic)
+langchain
+langchain-core
+langchain-community
+langchain-groq
+groq
+
+
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
