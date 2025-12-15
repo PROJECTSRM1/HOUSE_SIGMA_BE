@@ -32,17 +32,8 @@ Base = declarative_base()
 
 
 def get_db():
-    """
-    Returns DB session. If DB is DOWN → instantly return None.
-    """
+    db = SessionLocal()
     try:
-        db = SessionLocal()
         yield db
-    except Exception as e:
-        print("⚠ DB unavailable — fallback mode enabled:", e)
-        yield None  # IMPORTANT
     finally:
-        try:
-            db.close()
-        except:
-            pass
+        db.close()
